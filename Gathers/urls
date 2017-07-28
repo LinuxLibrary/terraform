@@ -1,0 +1,11 @@
+Terraform: AWS VPC with Private and Public Subnets
+https://nickcharlton.net/posts/terraform-aws-vpc.html
+
+Building VPC with Terraform in Amazon AWS
+https://icicimov.github.io/blog/devops/Building-VPC-with-Terraform-in-Amazon-AWS/
+
+Create AWS VPC with Terraform
+https://davidwzhang.com/2017/03/25/create-aws-vpc-with-terraform/
+
+Create a basic Internet Connected VPC on AWS with terraform from HashiCorp
+http://blog.kaliloudiaby.com/index.php/terraform-to-provision-vpc-on-aws-amazon-web-services/
