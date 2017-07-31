@@ -11,7 +11,7 @@ resource "aws_vpc" "vpc" {
 - Create Internet Gateway
 
 ```
-resource "aws_internet_gateway" "internet_gateway" {
+resource "aws_internet_gateway" "igw01" {
 	vpc_id = "${aws_vpc.vpc.ic}"
 }
 ```
@@ -24,7 +24,7 @@ resource "aws_internet_gateway" "internet_gateway" {
 		vpc_id = "${aws_vpc.vpc.id}"
 		route {
 			cidr_block = "0.0.0.0/0"
-			gateway_id = "${aws_internet_gateway.internet_gateway.id}"
+			gateway_id = "${aws_internet_gateway.igw01.id}"
 		}
 		tags {
 			Name = "public"
