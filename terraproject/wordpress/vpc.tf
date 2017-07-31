@@ -127,6 +127,21 @@ resource "aws_db_subnet_group" "rds_instance_group" {
 	}
 }
 
+# Security Group - JUMPHOST
+resource "aws_security_group" "jumphost" {
+	name = "sg_jumphost"
+	description = "Used for Jump host access"
+	vpc_id = "${aws_vpc.vpc.id}"
+	
+	# SSH-INGRESS
+	ingress {
+		from_port	= 22
+		to_port		= 22
+		protocol	= "tcp"
+		cidr_blocks	= ["0.0.0.0/0"]
+	}
+}
+
 # Security Group - PUBLIC
 resource "aws_security_group" "public" {
 	name = "sg_public"
