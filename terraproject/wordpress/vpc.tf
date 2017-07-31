@@ -1,6 +1,9 @@
 # VPC CIDR-Block
 resource "aws_vpc" "vpc" {
 	cidr_block = "10.1.0.0/16"
+	tags {
+		Name = "lldev01"
+	}
 }
 
 # Internet Gateway
@@ -115,22 +118,13 @@ resource "aws_route_table_association" "private2-assoc" {
 	route_table_id = "${aws_route_table.public.id}"
 }
 
-# Subnet association with Route Table - RDS1
-resource "aws_route_table_association" "rds1" {
-	subnet_id = "${aws_subnet.rds1.id}"
-	route_table_id = "${aws_route_table.public.id}"
-}
-
-# Subnet association with Route Table - RDS2
-resource "aws_route_table_association" "rds2" {
-	subnet_id = "${aws_subnet.rds2.id}"
-	route_table_id = "${aws_route_table.public.id}"
-}
-
-# Subnet association with Route Table - RDS3
-resource "aws_route_table_association" "rds3" {
-	subnet_id = "${aws_subnet.rds3.id}"
-	route_table_id = "${aws_route_table.public.id}"
+# Subnet association with Route Table - RDS_Instance_Group
+resource "aws_db_subnet_group" "rds_instance_group" {
+	name = "rds_instance_group"
+	subnet_ids = ["${aws_subnet.rds1.id}", "${aws_subnet.rds2.id}", "${aws_subnet.rds3.id}"]
+	tags {
+		Name = "rds_sng"
+	}
 }
 
 # Security Group - PUBLIC
@@ -144,7 +138,8 @@ resource "aws_security_group" "public" {
 		from_port	= 22
 		to_port		= 22
 		protocol	= "tcp"
-		cidr_blocks	= ["${var.localip}"]
+#		cidr_blocks	= ["${var.localip}"]
+		cidr_blocks	= ["10.1.0.0/16"]
 	}
 	
 	# HTTP-INGRESS
@@ -161,6 +156,9 @@ resource "aws_security_group" "public" {
 		to_port		= 0
 		protocol	= "-1"
 		cidr_blocks	= ["0.0.0.0/0"]
+	}
+	tags {
+		Name = "sg_public"
 	}
 }
 
@@ -183,6 +181,9 @@ resource "aws_security_group" "private" {
 		protocol	= "-1"
 		cidr_blocks	= ["0.0.0.0/0"]
 	}
+	tags {
+		Name = "sg_private"
+	}
 }
 
 # Security Group - RDS
@@ -197,5 +198,8 @@ resource "aws_security_group" "rds" {
 		to_port		= 3306
 		protocol	= "tcp"
 		security_groups	= ["${aws_security_group.public.id}", "${aws_security_group.private.id}"]
+	}
+	tags {
+		Name = "sg_rds"
 	}
 }
