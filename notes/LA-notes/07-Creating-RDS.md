@@ -4,12 +4,12 @@
 	- Stogare size	: 10G
 	- Engine	: MySQL
 	- Version	: 5.6.27
-	- Instance Class: 
-	- DB Name	: 
-	- Username	: 
-	- Password	: 
-	- DB Subnet GRP	: 
-	- VPC SG GRP IDs: 
+	- Instance Class: db.t2.micro
+	- DB Name	: lldev01
+	- Username	: lldev01
+	- Password	: lldev01pass
+	- DB Subnet GRP	: ${aws_db_subnet_group.rds_instance_group.name}
+	- VPC SG GRP IDs: ["${aws_security_group.rds.id}"]
 
 ```
 resource "aws_db_instance" "db" {
