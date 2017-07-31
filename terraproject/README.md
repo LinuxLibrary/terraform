@@ -1,1 +1,1 @@
-# Wordpress Project using Terraform
+# Terraform Projects
