@@ -76,7 +76,7 @@ resource "aws_subnet" "rds1" {
 }
 
 # Subnet - RDS02
-resource "aws_subnet" "rds1" {
+resource "aws_subnet" "rds2" {
 	vpc_id = "${aws_vpc.vpc.id}"
 	cidr_block = "10.1.5.0/24"
 	map_public_ip_on_launch = false
@@ -100,28 +100,37 @@ resource "aws_subnet" "rds3" {
 # Subnet association with Route Table - PUBLIC
 resource "aws_route_table_association" "public_assoc" {
 	subnet_id = "${aws_subnet.public.id}"
-	route_id = "${aws_route_table.public.id}"
+	route_table_id = "${aws_route_table.public.id}"
 }
 
 # Subnet association with Route Table - PRIVATE1
 resource "aws_route_table_association" "private1-assoc" {
 	subnet_id = "${aws_subnet.private1.id}"
-	route_id = "${aws_route_table.public.id}"
+	route_table_id = "${aws_route_table.public.id}"
 }
 
 # Subnet association with Route Table - PRIVATE2
 resource "aws_route_table_association" "private2-assoc" {
 	subnet_id = "${aws_subnet.private2.id}"
-	route_id = "${aws_route_table.public.id}"
+	route_table_id = "${aws_route_table.public.id}"
 }
 
-# Subnet association with Route Table - RDS_GROUP
-resource "aws_route_table_association" "rds_instance_group" {
-	name = "rds_instance_group"
-	subnet_ids = ["${aws_subnet.rds1.id}", "${aws_subnet.rds2.id}", "${aws_subnet.rds3.id}"]
-	tags {
-		Name = "rds_sng"
-	}
+# Subnet association with Route Table - RDS1
+resource "aws_route_table_association" "rds1" {
+	subnet_id = "${aws_subnet.rds1.id}"
+	route_table_id = "${aws_route_table.public.id}"
+}
+
+# Subnet association with Route Table - RDS2
+resource "aws_route_table_association" "rds2" {
+	subnet_id = "${aws_subnet.rds2.id}"
+	route_table_id = "${aws_route_table.public.id}"
+}
+
+# Subnet association with Route Table - RDS3
+resource "aws_route_table_association" "rds3" {
+	subnet_id = "${aws_subnet.rds3.id}"
+	route_table_id = "${aws_route_table.public.id}"
 }
 
 # Security Group - PUBLIC
