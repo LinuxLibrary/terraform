@@ -221,3 +221,22 @@ resource "aws_security_group" "rds" {
 		Name = "sg_rds"
 	}
 }
+
+# S3 VPC Endpoint
+resource "aws_vpc_endpoint" "private-s3" {
+	vpc_id = "${aws_vpc.vpc.id}"
+	service_name = "com.amazonaws.${var.aws_region}.s3"
+	route_table_ids = ["${aws_vpc.vpc.main_route_table_id}", "${aws_route_table.public.id}"]
+	policy = <<EOF
+{
+  "Statement": [
+    {
+      "Action": "*",
+      "Effect": "Allow",
+      "Resource": "*",
+      "Principal": "*"
+    }
+  ]
+}
+EOF
+}
