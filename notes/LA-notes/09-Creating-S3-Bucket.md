@@ -26,7 +26,7 @@ resource "aws_iam_role_policy" "s3_access_policy" {
 	role = "${aws_iam_role.s3_access.id}"
 	policy = <<EOF
 {
-  "Version": "2017-07-31",
+  "Version": "2012-10-17",
   "Statement": [
     {
       "Effect": "Allow",
@@ -43,7 +43,7 @@ resource "aws_iam_role" "s3_access" {
 	name = "s3_access"
 	assume_role_policy = <<EOF
 {
-  "Version": "2017-07-31",
+  "Version": "2012-10-17",
   "Statement": [
     {
       "Action": "sts:AssumeRole",
@@ -87,7 +87,7 @@ EOF
 ```
 # Create S3 Bucket
 resource "aws_s3_bucket" "code" {
-        bucket = "${var.domain_name}_lldev01_code"
+        bucket = "${var.domain_name}-lldev01-code"
         acl = "private"
         force_destroy = true
         tags {
