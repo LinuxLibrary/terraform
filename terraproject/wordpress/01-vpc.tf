@@ -157,7 +157,7 @@ resource "aws_security_group" "public" {
 		to_port		= 22
 		protocol	= "tcp"
 #		cidr_blocks	= ["${var.localip}"]
-		cidr_blocks	= ["10.1.0.0/16"]
+		cidr_blocks	= ["0.0.0.0/0"]
 	}
 	
 	# HTTP-INGRESS
