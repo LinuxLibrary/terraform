@@ -1,7 +1,9 @@
 --- # Playbook for installing and configuring Wordpress
 - hosts: dev
-  remote_user: ec2-user
+  user: ec2-user
   become: yes
+  connection: ssh
+  gather_facts: no
   tasks:
     - name: Install Apache
       yum: name=httpd state=latest
