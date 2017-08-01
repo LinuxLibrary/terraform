@@ -18,7 +18,7 @@ s3code=${aws_s3_bucket.code.bucket}
 EOF"
         }
         provisioner "local-exec" {
-                command = "sleep 6m && ansible-playbook -i aws_hosts wordpress.yml"
+                command = "sleep 6m && ansible-playbook -i aws_hosts 05-wordpress.yml"
         }
 }
 
