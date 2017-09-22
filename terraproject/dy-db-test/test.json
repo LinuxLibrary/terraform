@@ -1,0 +1,22 @@
+{
+    "Role": {
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "sts:AssumeRole", 
+                    "Effect": "Allow", 
+                    "Principal": {
+                        "Service": "application-autoscaling.amazonaws.com"
+                    }
+                }
+            ]
+        }, 
+        "RoleId": "AROAJBZ2UFF4CCJUTD3J4", 
+        "CreateDate": "2017-09-22T09:21:40.712Z", 
+        "RoleName": "MyIAMAutoscalingServiceRole", 
+        "Path": "/", 
+        "Arn": "arn:aws:iam::297929427764:role/MyIAMAutoscalingServiceRole"
+    }
+}
+
