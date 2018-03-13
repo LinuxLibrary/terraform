@@ -1,0 +1,35 @@
+# Project Outline
+
+- We want to create the following through terraform
+
+- IAM role for S3 access
+- VPC
+	- Internet Gateway
+	- Public Route Table
+	- Private Route Table
+	- Subnets
+		- Public
+		- Private1
+		- Private2
+		- RDS1
+		- RDS2
+		- RDS3
+	- Security Groups
+		- Jumphost
+		- Private
+		- Public
+		- RDS
+- S3 Code Bucket
+- Compute
+- Key Pair
+- Dev Server
+	- Ansible Playbook (For installing necessary software)
+- Load Balancer
+- AMI
+- Launch Config
+- ASG
+- Route53
+	- Primary zone
+	- www
+	- dev
+	- DB CNAME record to reference RDS instance

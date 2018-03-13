@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Log In - Online Cloud Training Certification | Linux Academy</title>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="apple-itunes-app" content="app-id=1084752266">
+    <link href="/templates/cp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/templates/cp/vendor/font-awesome/css/font-awesome.min.css">
+
+    <link href="//www.fuelcdn.com/fuelux/3.6.3/css/fuelux.min.css" rel="stylesheet">
+
+
+
+    <!-- <link href="/templates/cp/js/plugins/msgbox/jquery.msgbox.css" rel="stylesheet" />    -->
+
+    <!-- <link href="/templates/cp/assets/css/unmerged.css" rel="stylesheet" media="screen" /> -->
+    <!-- <link href="/templates/cp/assets/css/style.css" rel="stylesheet" media="screen" /> -->
+
+    <!-- <link href="/templates/cp/assets/css/templates.css" rel="stylesheet" media="screen" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/templates/cp/assets/css/tooltipster.bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/templates/cp/css/tooltipster-sideTip-light.min.css" /> -->
+
+    <!-- <link href="/templates/cp/js/plugins/jwplayer/controls.css" rel="stylesheet"> -->
+
+    <!-- <link href="/templates/cp/js/plugins/msgGrowl/css/msgGrowl.css" rel="stylesheet" /> -->
+    <!-- <link href="/templates/cp/css/ui-lightness/jquery-ui-1.10.0.custom.min.css" rel="stylesheet"> -->
+
+    <link href="/lib/cache/67158650f02b3f7ce6f6e647b739fdaa_003e8b6a22e437735f25954a4474492b_fd1e0b61b25d3ac531c2509f139c4be6_c217cd1a26d2d745236c84ab3aeee968_.css?ver=1501164655" rel="stylesheet" media="screen"  />    <link href="/lib/cache/76308064f13f34af7f6526c0949adcdb_e657ea7e846ffd8ef0ec7c58fa211e6a_c5e4dd3c71869d98c53a03e81a6fe706_f4e0736a51192db64272079d13b53049_.css?ver=1501164655" rel="stylesheet" media="screen"  />    <link href="/templates/cp/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" media="screen" />
+    <link href="/lib/cache/e61ea0704d8dad382967aba48804f02a.css?ver=1493402141" rel="stylesheet" media="screen" />
+    <!-- Kissmetrics Integration -->
+    <script type="text/javascript">var _kmq = _kmq || [];
+            var _kmk = _kmk || 'a4e0fccec940e867a36ba5bdedb4cdb45d039d11';
+            function _kms(u){
+            setTimeout(function(){
+                var d = document, f = d.getElementsByTagName('script')[0],
+                    s = d.createElement('script');
+                s.type = 'text/javascript'; s.async = true; s.src = u;
+                f.parentNode.insertBefore(s, f);
+            }, 1);
+        }
+        _kms('//i.kissmetrics.com/i.js');
+        _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+    <!-- /Kissmetrics Integration -->
+
+
+    <!-- WalkMe Integration -->
+    <script type="text/javascript">
+            (function() {var walkme = document.createElement('script');
+        walkme.type = 'text/javascript'; walkme.async = true; walkme.src = 'https://cdn.walkme.com/users/70c5e13ae17d404abc5dbf81d27b21e3/walkme_70c5e13ae17d404abc5dbf81d27b21e3_https.js'; var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(walkme, s); window._walkmeConfig = {smartLoad:true}; })();
+        </script>
+    <!-- /WalkMe Integration -->
+
+
+    <script src="//use.typekit.net/gcz7etl.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="/templates/cp/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/cache/bf35ef5df8e18871c27311e117de8261_8a75f24b57fc568570b3cd3eaf651e57_5a636092aa127d3beaa59684fa12d607_c42583c2d4ef285d62de2f4784c3bfc8_.js?ver=1493402141"></script>    <script src="/lib/cache/bf73ee1d339f143fff1324c2b54d7dac_026b83c5b3a545a5fa8f71394ae8120f_136f3c4d5302018ba22be3d1d5f55335_.js?ver=1493402141"></script><script src="/templates/cp/js/libs/jquery.caret.js"></script>
+    <script src="/lib/cache/01a1e18b1a59a971bfb1e8604b4cb573_fa69c4fd4f35978594e13332c73afd03_6638997ea48d9cc4da63a5f876a66af1_.js?ver=1493402141"></script>    <script src="/templates/cp/js/bootstrap-multiselect.js"></script>    <script src="/templates/cp/js/plugins/swfobject/swfobject.js"></script>
+
+    <meta name="description"
+          content="Log in today to sign up for any Linux, Amazon Web Services, DevOps, SQL, LPIC and OpenStack training certification courses offered through Linux Academy.">
+
+    <style>
+    /** NEW LOGIN PAGE STYLES **/
+    .login-container {
+        overflow-x: hidden;
+    }
+    .la-callout {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        padding-right: 0;
+    }
+    .callout {
+        padding: 5%;
+    }
+    .login.section h2 {
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .login.section .login-form-container {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .logo-container {
+        max-width: 60%;
+    }
+    .logo-container svg {
+        display: block;
+        width: 100%;
+    }
+    .login.section {
+        padding: 20px 0;
+        min-height: 50vh;
+    }
+    .btn-la { background: #1c2b35; }
+    /*Azure Ad Styles*/
+    .callout.azure {
+        min-height: 50vh;
+        background: url('//assets.linuxacademy.com/templates/cp/assets/img/login/Log-In-Ad-02.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .callout.azure h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 24px;
+        width: 59%;
+        font-weight: 300;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .callout.azure h3 strong {
+        font-family: 'Helvetica', Arial, sans-serif;
+        font-weight: 800;
+        color: #ec5951;
+    }
+    .callout.azure .azure-logo {
+        width: 40%;
+        text-align: right;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .callout.azure .azure-logo svg {
+        display: block;
+        width: 50%;
+        height: auto;
+        float: right;
+    }
+    /* Orion Ad Styles */
+    .callout.orion {
+        min-height: 50vh;
+        background: url('//assets.linuxacademy.com/templates/cp/assets/img/login/paper-bg.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .callout.orion .orion {
+        display: none;
+        margin: 0 auto;
+    }
+    .callout.orion .orion img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .callout.orion .orion-text { color: #fff; text-align: center; }
+    .callout.orion .orion-text h2 {
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .callout.orion .orion-text h3 {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-family: 'Helvetica', Arial, sans-serif;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    .callout.orion .orion-text p {
+        font-size: 14px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 100;
+        padding: 0 1%;
+        line-height: 2;
+    }
+    .callout.orion .btn-outline {
+        display: inline-block;
+        border: 3px solid #ec5951;
+        color: #ec5951;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px;
+        font-weight: 600;
+        transition: all ease 0.5s;
+        border-radius: 5px;
+    }
+    .callout.orion .btn-outline:hover {
+        background: #ec5951;
+        color: #fff;
+    }
+    /* Red Hat Ad Styles*/
+    .callout.red-hat {
+        min-height: 50vh;
+        background: url('/templates/cp/assets/img/login/red-hat.png') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .callout.red-hat .red-hat-text {
+        max-width: 70%;
+    }
+    .callout.red-hat .red-hat-text h2,
+    .callout.google-cloud-platform .google-cloud-platform-text h2,
+    .callout.promo-ad .promo-ad-text h2 {
+        color: #fff;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1;
+    }
+    .callout.google-cloud-platform .google-cloud-platform-text h2 {
+        font-size: 22px;
+    }
+    .callout.red-hat .red-hat-text h2 strong,
+    .callout.google-cloud-platform .google-cloud-platform-text h2 strong,
+    .callout.promo-ad .promo-ad-text h2 strong {
+        font-family: 'Helvetica', Arial, sans-serif;
+        font-weight: 800;
+        display: block;
+    }
+    .callout.red-hat .red-hat-text ul {
+        list-style: none;
+        margin: 5px 0 0;
+        padding: 0;
+    }
+    .callout.red-hat .red-hat-text ul li {
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #fff;
+        line-height: 1;
+        font-size: 16px;
+    }
+    /* google cloud platform ad styles */
+    .callout.google-cloud-platform {
+        min-height: 50vh;
+        background: url('/templates/cp/assets/img/login/Google-Cloud-Platform.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .callout.google-cloud-platform .google-cloud-platform-text {
+        max-width: 70%;
+    }
+    .callout.google-cloud-platform .google-cloud-platform-text h2 strong {
+        color:#231f20;
+    }
+    /*Promo Ad Styles*/
+    .callout.promo-ad {
+        min-height: 76vh;
+        background: url('/templates/cp/assets/img/login/Promo-Ad-Background.png') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .callout.promo-ad .promo-ad-text {
+        position: relative;
+        z-index: 1;
+    }
+    .callout.promo-ad .promo-ad-text h2 {
+        font-size: 36px;
+        margin-bottom: 6px;
+    }
+    .callout.promo-ad .promo-ad-text h3 {
+        color:White;
+        font-size: 32px;
+        font-weight: 200;
+        margin-bottom: 4px;
+    }
+    .callout.promo-ad .promo-ad-text h3 strong {
+        font-family: 'Helvetica', Arial, sans-serif;
+        font-weight: 800;
+        margin-left: 12px;
+    }
+    .callout.promo-ad .promo-ad-text h3 strong span {
+        font-size: 16px;
+        color:White;
+    }
+    .callout.promo-ad .promo-ad-text span {
+        color:#b5d2ed;
+        font-size: 26px;
+    }
+    .callout.promo-ad .promo-ad-text span.sub-title {
+        display: block;
+        margin-bottom: 40px;
+        font-weight: 200;
+    }
+    .callout.promo-ad .promo-ad-text ul {
+        list-style-type: none;
+        color:#b5d2ed;
+        -webkit-padding-start: 0;
+        margin-bottom: 30px;
+    }
+    .promo-footer-text span:first-child {
+        color:White;
+        font-weight: 400;
+        display: block;
+    }
+    .promo-footer-text span:nth-child(2) {
+        color:#b5d2ed;
+        font-weight: 400;
+    }
+    @-webkit-keyframes animateCloud {
+        0% {margin-left: -400px;}
+        100% {margin-left: 100%;}
+    }
+    @-moz-keyframes animateCloud {
+        0% {margin-left: -400px;}
+        100% {margin-left: 100%;}
+    }
+    @keyframes animateCloud {
+        0% {margin-left: -400px;}
+        100% {margin-left: 100%;}
+    }
+    .x1, .x2, .x3 {
+        position: absolute;
+        z-index: 0;
+    }
+    .x1 {
+        top: 200px;
+        margin-left: -400px;
+        -webkit-animation: animateCloud 90s linear infinite;
+        -moz-animation: animateCloud 90s linear infinite;
+        animation: animateCloud 90s linear infinite;
+        -webkit-animation-delay: 16s;
+        animation-delay: 16s;
+        
+        -webkit-transform: scale(0.65);
+        -moz-transform: scale(0.65);
+        transform: scale(0.65);
+    }
+    .x2 {
+        top: 20px;
+        left: -100px;
+        -webkit-animation: animateClou 60s linear infinite;
+        -moz-animation: animateCloud 60s linear infinite;
+        animation: animateCloud 60s linear infinite;
+        
+        -webkit-transform: scale(0.3);
+        -moz-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+    .x3 {
+        top: 370px;
+        left: 0;
+        -webkit-animation: animateCloud 40s linear infinite;
+        -moz-animation: animateCloud 40s linear infinite;
+        animation: animateCloud 40s linear infinite;
+        
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    .cloud {
+        background: #597896;
+        background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+        
+        border-radius: 100px;
+        box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+        height: 120px;
+        position: relative;
+        width: 350px;
+    }
+    .cloud:after, .cloud:before {
+        background: #597896;
+        content: '';
+        position: absolute;
+        z-index: -1;
+    }
+    .cloud:after {
+        border-radius: 100px;
+        height: 100px;
+        left: 50px;
+        top: -50px;
+        width: 100px;
+    }
+    .cloud:before {
+        border-radius: 200px;
+        width: 180px;
+        height: 180px;
+        right: 50px;
+        top: -90px;
+    }
+    @media (min-width: 576px) {
+        .callout.google-cloud-platform .google-cloud-platform-text h2,
+        .callout.red-hat .red-hat-text h2 {
+            font-size:26px;
+        }
+
+            .logo-container {
+                max-width: 50%;
+            }
+
+            .callout.promo-ad {
+                min-height: 68vh;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .callout.google-cloud-platform .google-cloud-platform-text h2,
+            .callout.red-hat .red-hat-text h2 {
+                font-size: 28px;
+            }
+
+            .logo-container {
+                max-width: 40%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .login.section {
+                min-height: 100vh;
+            }
+
+            .callout, .callout.azure, .callout.orion {
+                min-height: 100vh;
+            }
+
+            .callout.azure h3 {
+                font-size: 42px;
+            }
+
+            .callout.orion .orion {
+                display: block;
+                max-width: 60%
+            }
+
+            .callout.orion .orion-text h2 {
+                font-size: 60px;
+            }
+
+            .callout.orion .orion-text h3 {
+                font-size: 32px;
+            }
+
+            .callout.orion .orion-text p {
+                font-size: 18px;
+                margin-top: 40px;
+                padding: 0 25%;
+            }
+
+            .callout.red-hat,
+            .callout.google-cloud-platform,
+            .callout.promo-ad {
+                min-height: 100vh;
+            }
+
+            .callout.red-hat .red-hat-text {
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+            }
+
+            .callout.google-cloud-platform .google-cloud-platform-text {
+                position: absolute;
+                top: 4%;
+                left: 8%;
+            }
+
+            .callout.red-hat .red-hat-text h2,
+            .callout.google-cloud-platform .google-cloud-platform-text h2 {
+                font-size: 32px;
+            }
+
+            .callout.red-hat .red-hat-text ul li {
+                font-size: 24px;
+            }
+
+            .logo-container {
+                max-width: 60%;
+                margin-top: 15%;
+            }
+
+            .login.section h2 {
+                margin-top: 60px;
+            }
+
+            .login.section {
+                padding: 50px 30px 50px 0;
+            }
+
+            .login.section .login-form-container {
+                max-width: 65%;
+            }
+
+            .callout.promo-ad .promo-ad-text span.sub-title {
+                max-width: 65%;
+            }
+        }
+    </style>
+    <!--
+    <script type="text/javascript">
+    // This is a cycle through the arrays of callouts. It can be used when we add more callouts in the future. This function is not specific for just the current two we have.
+        $(document).ready(function() {
+            var callouts = $('.callout.change-up');
+            var currentCycle = 0;
+            var randomNum = currentCycle;
+            var isPaused = false;
+
+            var cycle = setInterval(function() {
+                randomNum = Math.round(Math.random(0,callouts.length));
+                if(randomNum != currentCycle && !isPaused) {
+                    $('.callout.change-up.active').fadeOut(500, function() {
+                        $(this).removeClass('active');
+                        $(callouts[randomNum]).fadeIn(500, function() {
+                            $(this).addClass('active');
+                        });
+                    });
+                    currentCycle = randomNum;
+                }
+            }, 5000);
+
+            callouts.hover(function() {
+                isPaused = true;
+            }, function() {
+                isPaused = false;
+            });
+        });
+    </script>
+    -->
+</head>
+
+<body>
+<div class="login-container">
+    <div class="row">
+        <div class="col-md-6 col-md-push-6">
+            <div class="login section" style="display:inherit">
+                <div class="login-form-container">
+                    <div class="logo-container">
+                        <a href="/">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 1200 212.2" style="enable-background:new 0 0 1200 212.2;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill-rule: evenodd;
+                                        clip-rule: evenodd;
+                                        fill: #1C2B35;
+                                    }
+
+                                    .st1 {
+                                        fill: #1C2B35;
+                                    }
+                                </style>
+                                <g>
+                                    <g>
+                                        <path class="st0" d="M109.3,30.8c-47.1,0-84.6,38.2-84.6,85.3v0v0v61.7l26.2,0.5c15.3,14.3,35.4,23.1,58,23.1
+                                			c22.6,0,43.3-8.8,58.5-23.1l27.1-0.5v-60.3c0-0.5,0.1-0.9,0.1-1.4C194.6,69,156.4,30.8,109.3,30.8z M108.5,190
+                                			c-40.8,0-73.9-33.1-73.9-73.9c0-40.8,33.1-73.9,73.9-73.9s73.9,33.1,73.9,73.9C182.4,156.9,149.3,190,108.5,190z"/>
+                                        <polygon class="st0" points="109.3,117.5 94.7,127 109.3,156.2 123.4,127 		"/>
+                                        <circle class="st0" cx="76.1" cy="109.9" r="6.1"/>
+                                        <circle class="st0" cx="138.3" cy="109.9" r="6.1"/>
+                                        <polygon class="st0" points="109.6,99.7 210.3,52.6 109.6,10 109.6,9.8 109.6,9.9 109.6,9.8 109.6,10 4,52.6 109.6,99.7
+                                			109.6,99.9 109.6,99.8 109.6,99.9 		"/>
+                                    </g>
+                                    <rect x="192.8" y="53.8" class="st0" width="7.4" height="39.1"/>
+                                    <g>
+                                        <path class="st1" d="M283.8,68.5c0-5.7,2.8-8.5,7.9-8.5h2.7c5.5,0,8.3,2.8,8.3,8.5v57.9h30.8c5.9,0,8.7,2.7,8.7,7.9v0.5
+                                			c0,5.2-2.8,8.2-8.7,8.2h-39.9c-6.1,0-9.8-3.7-9.8-10.3V68.5z"/>
+                                        <path class="st1" d="M354.6,61.2c0-5.6,3.8-9,10.1-9s10.1,3.3,10.1,9s-3.8,9.2-10.1,9.2S354.6,67,354.6,61.2z M355.6,88.8
+                                			c0-6.5,3.4-8.7,8-8.7h1.9c4.8,0,8,2,8,8.7v46.1c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.7,0-8.2-1.9-8.2-8.5V88.8z"/>
+                                        <path class="st1" d="M390.8,82.1c0-0.5,3.2-2,6.8-2c4.6,0,9.6,2.2,10.8,10.2c4.3-6.4,10.8-11,20.5-11c16.2,0,23.1,11.5,23.1,25.7
+                                			v29.8c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5v-27.1c0-8.3-4.2-13.4-11.5-13.4c-6.4,0-11.2,3.3-13.8,8.2v32.4
+                                			c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V82.1z"/>
+                                        <path class="st1" d="M467.5,88.8c0-6.5,3.3-8.7,7.9-8.7h1.9c4.7,0,8.2,2,8.2,8.7v27.4c0,8.3,4.2,13.4,11.7,13.4
+                                			c6,0,10.8-3.3,13.4-8.2V88.8c0-6.5,3.3-8.7,8-8.7h1.8c4.8,0,8.2,2,8.2,8.7v52.6c0,0.6-3.1,2-6.8,2c-4.5,0-9.4-1.9-10.8-9.8
+                                			c-4.3,6.4-10.7,11-20.4,11c-16.3,0-23.1-11.5-23.1-25.7V88.8z"/>
+                                        <path class="st1" d="M559.8,111.9l-18.7-26c-0.5-0.9,4.1-6,9.9-6c4.2,0,7.6,1.9,10.1,6.5l10.6,16.6l10.6-16.6
+                                			c2.5-4.7,6.2-6.5,9.8-6.5c6.1,0,10.8,5.1,10.2,6l-19,26l18.7,25.7c0.6,0.9-4,6-10.3,6c-4.1,0-7.4-2.2-9.7-6.5l-10.6-16.6
+                                			l-10.5,16.6c-2.3,4.2-5.7,6.5-9.9,6.5c-6,0-10.7-5.2-10.1-6L559.8,111.9z"/>
+                                        <path class="st1" d="M662.1,65.3c1-3.4,3.7-5.6,12.2-5.6c8.7,0,11,2.2,12.1,5.6l28.8,72.6c0.6,1.5-4.6,5.9-10.2,5.9
+                                			c-4.1,0-8.3-2.2-10.8-8.9l-5-13H659l-5,13.3c-2.3,6.5-6.2,8.7-10.3,8.7c-5.2,0-10.5-4.1-9.8-5.7L662.1,65.3z M685.4,107.9
+                                			l-11.3-30l-11.3,30H685.4z"/>
+                                        <path class="st1" d="M755.4,79.4c19,0,26.5,10.8,26.5,16.8c0,7.3-9.6,8.5-9.9,7.9c-2.4-6-7-10.3-15.8-10.3c-9.8,0-17,7.5-17,18
+                                			c0,10.7,7.1,18.4,17,18.4c8.5,0,13.4-4.3,15.8-10.3c0.3-0.8,9.9,0.4,9.9,8c0,5.9-7.9,16.7-26.5,16.7c-19.2,0-32.8-13.5-32.8-32.8
+                                			C722.6,93,736.4,79.4,755.4,79.4z"/>
+                                        <path class="st1" d="M831.5,105.2h2c0-8-4.5-12.4-12.7-12.4c-8.7,0-13.1,4.7-15.4,9.6c0,0.3-11.6,0.6-11.6-7.6
+                                			c0-7.8,9.2-15.4,28.2-15.4c19.6,0,29.3,8.9,29.3,25.6v36.8c0,0.9-3.3,2-6.8,2c-5.7,0-9.6-3.1-10.6-9.8
+                                			c-4.5,6.5-12.4,10.3-21.5,10.3c-13,0-20.9-7.4-20.9-18C791.5,112.1,804.2,105.6,831.5,105.2z M818.4,132.6c8.9,0,15.2-5.9,15.2-14
+                                			V115l-3.3,0.1c-14.1,0.4-21.5,3.2-21.5,9.9C808.7,129.7,812.4,132.6,818.4,132.6z"/>
+                                        <path class="st1" d="M893.2,79.3c9,0,16.2,4.1,19.9,9.4V56.4c0-0.6,3.2-2,6.8-2c5.4,0,11.2,2.8,11.2,14.4v66.1
+                                			c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5v-2c-4.1,7.3-11,11.7-20.1,11.7c-16.8,0-28.8-13.1-28.8-32.6
+                                			C864.1,92.2,876,79.3,893.2,79.3z M897.4,130.3c8.5,0,15.7-6,15.7-14.8v-11.9c-2.7-6.1-7.9-9.9-15.4-9.9
+                                			c-9.8,0-16.2,7.1-16.2,18.2C881.4,122.8,888.1,130.3,897.4,130.3z"/>
+                                        <path class="st1" d="M976.9,79.3c18.4,0,31,12.9,31,31.1v1.3c-0.1,3.2-1,5-4.3,5h-43c1.3,9.3,8.4,14.8,18.1,14.8
+                                			c9.4,0,14.7-4.2,17.6-9.2c0.1-0.3,8.7,0.9,8.7,8c0,6.8-9.6,14.3-26.9,14.3c-20.3,0-33.6-12.6-33.6-32.2
+                                			C944.4,93.3,958,79.3,976.9,79.3z M991.2,106.2c-0.4-8.7-5.9-14.4-14.5-14.4c-8.4,0-14.8,6-16.1,14.4H991.2z"/>
+                                        <path class="st1" d="M1021,82.1c0-0.5,3.2-2,6.8-2c4.6,0,9.6,2,10.8,9.9c4.2-6.2,10.3-10.7,19.2-10.7c10.3,0,17,4.8,19.9,12.7
+                                			c4.2-7.1,10.7-12.7,21-12.7c15.8,0,22.4,10.1,22.4,24.7v30.8c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V107
+                                			c0-8.3-3.7-12.6-10.8-12.6c-5.2,0-9.8,3.2-12.4,7.6v32.9c0,6.5-3.2,8.5-7.9,8.5h-1.8c-4.8,0-8.3-1.9-8.3-8.5v-27.5
+                                			c0-8.7-3.6-13-10.7-13c-5.2,0-9.8,3.2-12.4,7.6v32.9c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V82.1z"/>
+                                        <path class="st1" d="M1131,85.3c-0.4-1,4.3-5.2,9.8-5.4c4.2,0,7.9,2,10.1,9l13.5,35.6l12-35.4c2.2-7,6-9.2,9.9-9.2
+                                			c5.1,0,10.1,4.2,9.7,5.1l-28.3,73.5c-2.7,6.8-6.2,8.8-10.2,8.8c-5.2,0-10.1-4.1-9.6-5l10.3-23.5c-2.9-0.4-4.7-1.5-5.9-4.1
+                                			L1131,85.3z"/>
+                                    </g>
+                                </g>
+                                </svg>
+                        </a>
+                    </div>
+                    <h2>Log In</h2>
+
+                    <form action="/cp/login" method="post">
+                                                <div class="form-group">
+                            <input class="form-control" type="text" name="username" required placeholder="Username or Email"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="request_uri" value="/cp/login?redirect=/cp/guides/download/refsheets/guides/refsheets/labscripts_1484168615.zip"/>
+                            <input class="form-control" type="password" name="password" required placeholder="Password"/>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <small>
+                                        <a href="/cp/login/forgot">Forgot Password</a> | <a href="/cp/login/forgotUsername">Forgot Username</a><br>
+                                        Don't have an account? <a href="/join/pricing">Sign up Now</a>
+                                    </small>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="hidden" name="submit" value="1"/>
+                                    <button type="submit" class="btn btn-la btn-la pull-right">Log In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- .login-form-container -->
+            </div>
+            <!-- .login.section -->
+
+            <div class="login section" style="display:none">
+                <div class="login-form-container">
+                    <div class="logo-container">
+                        <a href="/">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 1200 212.2" style="enable-background:new 0 0 1200 212.2;" xml:space="preserve">
+                              <style type="text/css">
+                                  .st0 {
+                                      fill-rule: evenodd;
+                                      clip-rule: evenodd;
+                                      fill: #1C2B35;
+                                  }
+
+                                  .st1 {
+                                      fill: #1C2B35;
+                                  }
+                              </style>
+                                <g>
+                                    <g>
+                                        <path class="st0" d="M109.3,30.8c-47.1,0-84.6,38.2-84.6,85.3v0v0v61.7l26.2,0.5c15.3,14.3,35.4,23.1,58,23.1
+                                          c22.6,0,43.3-8.8,58.5-23.1l27.1-0.5v-60.3c0-0.5,0.1-0.9,0.1-1.4C194.6,69,156.4,30.8,109.3,30.8z M108.5,190
+                                          c-40.8,0-73.9-33.1-73.9-73.9c0-40.8,33.1-73.9,73.9-73.9s73.9,33.1,73.9,73.9C182.4,156.9,149.3,190,108.5,190z"/>
+                                        <polygon class="st0" points="109.3,117.5 94.7,127 109.3,156.2 123.4,127 		"/>
+                                        <circle class="st0" cx="76.1" cy="109.9" r="6.1"/>
+                                        <circle class="st0" cx="138.3" cy="109.9" r="6.1"/>
+                                        <polygon class="st0" points="109.6,99.7 210.3,52.6 109.6,10 109.6,9.8 109.6,9.9 109.6,9.8 109.6,10 4,52.6 109.6,99.7
+                                          109.6,99.9 109.6,99.8 109.6,99.9 		"/>
+                                    </g>
+                                    <rect x="192.8" y="53.8" class="st0" width="7.4" height="39.1"/>
+                                    <g>
+                                        <path class="st1" d="M283.8,68.5c0-5.7,2.8-8.5,7.9-8.5h2.7c5.5,0,8.3,2.8,8.3,8.5v57.9h30.8c5.9,0,8.7,2.7,8.7,7.9v0.5
+                                          c0,5.2-2.8,8.2-8.7,8.2h-39.9c-6.1,0-9.8-3.7-9.8-10.3V68.5z"/>
+                                        <path class="st1" d="M354.6,61.2c0-5.6,3.8-9,10.1-9s10.1,3.3,10.1,9s-3.8,9.2-10.1,9.2S354.6,67,354.6,61.2z M355.6,88.8
+                                          c0-6.5,3.4-8.7,8-8.7h1.9c4.8,0,8,2,8,8.7v46.1c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.7,0-8.2-1.9-8.2-8.5V88.8z"/>
+                                        <path class="st1" d="M390.8,82.1c0-0.5,3.2-2,6.8-2c4.6,0,9.6,2.2,10.8,10.2c4.3-6.4,10.8-11,20.5-11c16.2,0,23.1,11.5,23.1,25.7
+                                          v29.8c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5v-27.1c0-8.3-4.2-13.4-11.5-13.4c-6.4,0-11.2,3.3-13.8,8.2v32.4
+                                          c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V82.1z"/>
+                                        <path class="st1" d="M467.5,88.8c0-6.5,3.3-8.7,7.9-8.7h1.9c4.7,0,8.2,2,8.2,8.7v27.4c0,8.3,4.2,13.4,11.7,13.4
+                                          c6,0,10.8-3.3,13.4-8.2V88.8c0-6.5,3.3-8.7,8-8.7h1.8c4.8,0,8.2,2,8.2,8.7v52.6c0,0.6-3.1,2-6.8,2c-4.5,0-9.4-1.9-10.8-9.8
+                                          c-4.3,6.4-10.7,11-20.4,11c-16.3,0-23.1-11.5-23.1-25.7V88.8z"/>
+                                        <path class="st1" d="M559.8,111.9l-18.7-26c-0.5-0.9,4.1-6,9.9-6c4.2,0,7.6,1.9,10.1,6.5l10.6,16.6l10.6-16.6
+                                          c2.5-4.7,6.2-6.5,9.8-6.5c6.1,0,10.8,5.1,10.2,6l-19,26l18.7,25.7c0.6,0.9-4,6-10.3,6c-4.1,0-7.4-2.2-9.7-6.5l-10.6-16.6
+                                          l-10.5,16.6c-2.3,4.2-5.7,6.5-9.9,6.5c-6,0-10.7-5.2-10.1-6L559.8,111.9z"/>
+                                        <path class="st1" d="M662.1,65.3c1-3.4,3.7-5.6,12.2-5.6c8.7,0,11,2.2,12.1,5.6l28.8,72.6c0.6,1.5-4.6,5.9-10.2,5.9
+                                          c-4.1,0-8.3-2.2-10.8-8.9l-5-13H659l-5,13.3c-2.3,6.5-6.2,8.7-10.3,8.7c-5.2,0-10.5-4.1-9.8-5.7L662.1,65.3z M685.4,107.9
+                                          l-11.3-30l-11.3,30H685.4z"/>
+                                        <path class="st1" d="M755.4,79.4c19,0,26.5,10.8,26.5,16.8c0,7.3-9.6,8.5-9.9,7.9c-2.4-6-7-10.3-15.8-10.3c-9.8,0-17,7.5-17,18
+                                          c0,10.7,7.1,18.4,17,18.4c8.5,0,13.4-4.3,15.8-10.3c0.3-0.8,9.9,0.4,9.9,8c0,5.9-7.9,16.7-26.5,16.7c-19.2,0-32.8-13.5-32.8-32.8
+                                          C722.6,93,736.4,79.4,755.4,79.4z"/>
+                                        <path class="st1" d="M831.5,105.2h2c0-8-4.5-12.4-12.7-12.4c-8.7,0-13.1,4.7-15.4,9.6c0,0.3-11.6,0.6-11.6-7.6
+                                          c0-7.8,9.2-15.4,28.2-15.4c19.6,0,29.3,8.9,29.3,25.6v36.8c0,0.9-3.3,2-6.8,2c-5.7,0-9.6-3.1-10.6-9.8
+                                          c-4.5,6.5-12.4,10.3-21.5,10.3c-13,0-20.9-7.4-20.9-18C791.5,112.1,804.2,105.6,831.5,105.2z M818.4,132.6c8.9,0,15.2-5.9,15.2-14
+                                          V115l-3.3,0.1c-14.1,0.4-21.5,3.2-21.5,9.9C808.7,129.7,812.4,132.6,818.4,132.6z"/>
+                                        <path class="st1" d="M893.2,79.3c9,0,16.2,4.1,19.9,9.4V56.4c0-0.6,3.2-2,6.8-2c5.4,0,11.2,2.8,11.2,14.4v66.1
+                                          c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5v-2c-4.1,7.3-11,11.7-20.1,11.7c-16.8,0-28.8-13.1-28.8-32.6
+                                          C864.1,92.2,876,79.3,893.2,79.3z M897.4,130.3c8.5,0,15.7-6,15.7-14.8v-11.9c-2.7-6.1-7.9-9.9-15.4-9.9
+                                          c-9.8,0-16.2,7.1-16.2,18.2C881.4,122.8,888.1,130.3,897.4,130.3z"/>
+                                        <path class="st1" d="M976.9,79.3c18.4,0,31,12.9,31,31.1v1.3c-0.1,3.2-1,5-4.3,5h-43c1.3,9.3,8.4,14.8,18.1,14.8
+                                          c9.4,0,14.7-4.2,17.6-9.2c0.1-0.3,8.7,0.9,8.7,8c0,6.8-9.6,14.3-26.9,14.3c-20.3,0-33.6-12.6-33.6-32.2
+                                          C944.4,93.3,958,79.3,976.9,79.3z M991.2,106.2c-0.4-8.7-5.9-14.4-14.5-14.4c-8.4,0-14.8,6-16.1,14.4H991.2z"/>
+                                        <path class="st1" d="M1021,82.1c0-0.5,3.2-2,6.8-2c4.6,0,9.6,2,10.8,9.9c4.2-6.2,10.3-10.7,19.2-10.7c10.3,0,17,4.8,19.9,12.7
+                                          c4.2-7.1,10.7-12.7,21-12.7c15.8,0,22.4,10.1,22.4,24.7v30.8c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V107
+                                          c0-8.3-3.7-12.6-10.8-12.6c-5.2,0-9.8,3.2-12.4,7.6v32.9c0,6.5-3.2,8.5-7.9,8.5h-1.8c-4.8,0-8.3-1.9-8.3-8.5v-27.5
+                                          c0-8.7-3.6-13-10.7-13c-5.2,0-9.8,3.2-12.4,7.6v32.9c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V82.1z"/>
+                                        <path class="st1" d="M1131,85.3c-0.4-1,4.3-5.2,9.8-5.4c4.2,0,7.9,2,10.1,9l13.5,35.6l12-35.4c2.2-7,6-9.2,9.9-9.2
+                                          c5.1,0,10.1,4.2,9.7,5.1l-28.3,73.5c-2.7,6.8-6.2,8.8-10.2,8.8c-5.2,0-10.1-4.1-9.6-5l10.3-23.5c-2.9-0.4-4.7-1.5-5.9-4.1
+                                          L1131,85.3z"/>
+                                    </g>
+                                </g>
+                              </svg>
+                        </a>
+                    </div>
+                    <h2>Forgot your password?</h2>
+                    <p>Please enter your email address. You will receive a link to create a new password via email.</p>
+                    <form action="/cp/login/forgot" method="post">
+                                                <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input class="form-control" type="text" name="email" required placeholder="Email"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="submit" value="1"/>
+                            <button type="submit" class="btn btn-la btn-la pull-right">Request New Password</button>
+                        </div>
+                    </form>
+                    <div class="links">
+                        <small>
+                            <a href="/cp/login">Login</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!-- .section // Forgot Password -->
+
+            <div class="login section" style="display:none">
+                <div class="login-form-container">
+                    <div class="logo-container">
+                        <a href="/">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 1200 212.2" style="enable-background:new 0 0 1200 212.2;" xml:space="preserve">
+                              <style type="text/css">
+                                  .st0 {
+                                      fill-rule: evenodd;
+                                      clip-rule: evenodd;
+                                      fill: #1C2B35;
+                                  }
+
+                                  .st1 {
+                                      fill: #1C2B35;
+                                  }
+                              </style>
+                                <g>
+                                    <g>
+                                        <path class="st0" d="M109.3,30.8c-47.1,0-84.6,38.2-84.6,85.3v0v0v61.7l26.2,0.5c15.3,14.3,35.4,23.1,58,23.1
+                                          c22.6,0,43.3-8.8,58.5-23.1l27.1-0.5v-60.3c0-0.5,0.1-0.9,0.1-1.4C194.6,69,156.4,30.8,109.3,30.8z M108.5,190
+                                          c-40.8,0-73.9-33.1-73.9-73.9c0-40.8,33.1-73.9,73.9-73.9s73.9,33.1,73.9,73.9C182.4,156.9,149.3,190,108.5,190z"/>
+                                        <polygon class="st0" points="109.3,117.5 94.7,127 109.3,156.2 123.4,127 		"/>
+                                        <circle class="st0" cx="76.1" cy="109.9" r="6.1"/>
+                                        <circle class="st0" cx="138.3" cy="109.9" r="6.1"/>
+                                        <polygon class="st0" points="109.6,99.7 210.3,52.6 109.6,10 109.6,9.8 109.6,9.9 109.6,9.8 109.6,10 4,52.6 109.6,99.7
+                                          109.6,99.9 109.6,99.8 109.6,99.9 		"/>
+                                    </g>
+                                    <rect x="192.8" y="53.8" class="st0" width="7.4" height="39.1"/>
+                                    <g>
+                                        <path class="st1" d="M283.8,68.5c0-5.7,2.8-8.5,7.9-8.5h2.7c5.5,0,8.3,2.8,8.3,8.5v57.9h30.8c5.9,0,8.7,2.7,8.7,7.9v0.5
+                                          c0,5.2-2.8,8.2-8.7,8.2h-39.9c-6.1,0-9.8-3.7-9.8-10.3V68.5z"/>
+                                        <path class="st1" d="M354.6,61.2c0-5.6,3.8-9,10.1-9s10.1,3.3,10.1,9s-3.8,9.2-10.1,9.2S354.6,67,354.6,61.2z M355.6,88.8
+                                          c0-6.5,3.4-8.7,8-8.7h1.9c4.8,0,8,2,8,8.7v46.1c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.7,0-8.2-1.9-8.2-8.5V88.8z"/>
+                                        <path class="st1" d="M390.8,82.1c0-0.5,3.2-2,6.8-2c4.6,0,9.6,2.2,10.8,10.2c4.3-6.4,10.8-11,20.5-11c16.2,0,23.1,11.5,23.1,25.7
+                                          v29.8c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5v-27.1c0-8.3-4.2-13.4-11.5-13.4c-6.4,0-11.2,3.3-13.8,8.2v32.4
+                                          c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V82.1z"/>
+                                        <path class="st1" d="M467.5,88.8c0-6.5,3.3-8.7,7.9-8.7h1.9c4.7,0,8.2,2,8.2,8.7v27.4c0,8.3,4.2,13.4,11.7,13.4
+                                          c6,0,10.8-3.3,13.4-8.2V88.8c0-6.5,3.3-8.7,8-8.7h1.8c4.8,0,8.2,2,8.2,8.7v52.6c0,0.6-3.1,2-6.8,2c-4.5,0-9.4-1.9-10.8-9.8
+                                          c-4.3,6.4-10.7,11-20.4,11c-16.3,0-23.1-11.5-23.1-25.7V88.8z"/>
+                                        <path class="st1" d="M559.8,111.9l-18.7-26c-0.5-0.9,4.1-6,9.9-6c4.2,0,7.6,1.9,10.1,6.5l10.6,16.6l10.6-16.6
+                                          c2.5-4.7,6.2-6.5,9.8-6.5c6.1,0,10.8,5.1,10.2,6l-19,26l18.7,25.7c0.6,0.9-4,6-10.3,6c-4.1,0-7.4-2.2-9.7-6.5l-10.6-16.6
+                                          l-10.5,16.6c-2.3,4.2-5.7,6.5-9.9,6.5c-6,0-10.7-5.2-10.1-6L559.8,111.9z"/>
+                                        <path class="st1" d="M662.1,65.3c1-3.4,3.7-5.6,12.2-5.6c8.7,0,11,2.2,12.1,5.6l28.8,72.6c0.6,1.5-4.6,5.9-10.2,5.9
+                                          c-4.1,0-8.3-2.2-10.8-8.9l-5-13H659l-5,13.3c-2.3,6.5-6.2,8.7-10.3,8.7c-5.2,0-10.5-4.1-9.8-5.7L662.1,65.3z M685.4,107.9
+                                          l-11.3-30l-11.3,30H685.4z"/>
+                                        <path class="st1" d="M755.4,79.4c19,0,26.5,10.8,26.5,16.8c0,7.3-9.6,8.5-9.9,7.9c-2.4-6-7-10.3-15.8-10.3c-9.8,0-17,7.5-17,18
+                                          c0,10.7,7.1,18.4,17,18.4c8.5,0,13.4-4.3,15.8-10.3c0.3-0.8,9.9,0.4,9.9,8c0,5.9-7.9,16.7-26.5,16.7c-19.2,0-32.8-13.5-32.8-32.8
+                                          C722.6,93,736.4,79.4,755.4,79.4z"/>
+                                        <path class="st1" d="M831.5,105.2h2c0-8-4.5-12.4-12.7-12.4c-8.7,0-13.1,4.7-15.4,9.6c0,0.3-11.6,0.6-11.6-7.6
+                                          c0-7.8,9.2-15.4,28.2-15.4c19.6,0,29.3,8.9,29.3,25.6v36.8c0,0.9-3.3,2-6.8,2c-5.7,0-9.6-3.1-10.6-9.8
+                                          c-4.5,6.5-12.4,10.3-21.5,10.3c-13,0-20.9-7.4-20.9-18C791.5,112.1,804.2,105.6,831.5,105.2z M818.4,132.6c8.9,0,15.2-5.9,15.2-14
+                                          V115l-3.3,0.1c-14.1,0.4-21.5,3.2-21.5,9.9C808.7,129.7,812.4,132.6,818.4,132.6z"/>
+                                        <path class="st1" d="M893.2,79.3c9,0,16.2,4.1,19.9,9.4V56.4c0-0.6,3.2-2,6.8-2c5.4,0,11.2,2.8,11.2,14.4v66.1
+                                          c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5v-2c-4.1,7.3-11,11.7-20.1,11.7c-16.8,0-28.8-13.1-28.8-32.6
+                                          C864.1,92.2,876,79.3,893.2,79.3z M897.4,130.3c8.5,0,15.7-6,15.7-14.8v-11.9c-2.7-6.1-7.9-9.9-15.4-9.9
+                                          c-9.8,0-16.2,7.1-16.2,18.2C881.4,122.8,888.1,130.3,897.4,130.3z"/>
+                                        <path class="st1" d="M976.9,79.3c18.4,0,31,12.9,31,31.1v1.3c-0.1,3.2-1,5-4.3,5h-43c1.3,9.3,8.4,14.8,18.1,14.8
+                                          c9.4,0,14.7-4.2,17.6-9.2c0.1-0.3,8.7,0.9,8.7,8c0,6.8-9.6,14.3-26.9,14.3c-20.3,0-33.6-12.6-33.6-32.2
+                                          C944.4,93.3,958,79.3,976.9,79.3z M991.2,106.2c-0.4-8.7-5.9-14.4-14.5-14.4c-8.4,0-14.8,6-16.1,14.4H991.2z"/>
+                                        <path class="st1" d="M1021,82.1c0-0.5,3.2-2,6.8-2c4.6,0,9.6,2,10.8,9.9c4.2-6.2,10.3-10.7,19.2-10.7c10.3,0,17,4.8,19.9,12.7
+                                          c4.2-7.1,10.7-12.7,21-12.7c15.8,0,22.4,10.1,22.4,24.7v30.8c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V107
+                                          c0-8.3-3.7-12.6-10.8-12.6c-5.2,0-9.8,3.2-12.4,7.6v32.9c0,6.5-3.2,8.5-7.9,8.5h-1.8c-4.8,0-8.3-1.9-8.3-8.5v-27.5
+                                          c0-8.7-3.6-13-10.7-13c-5.2,0-9.8,3.2-12.4,7.6v32.9c0,6.5-3.3,8.5-7.9,8.5h-1.9c-4.8,0-8.2-1.9-8.2-8.5V82.1z"/>
+                                        <path class="st1" d="M1131,85.3c-0.4-1,4.3-5.2,9.8-5.4c4.2,0,7.9,2,10.1,9l13.5,35.6l12-35.4c2.2-7,6-9.2,9.9-9.2
+                                          c5.1,0,10.1,4.2,9.7,5.1l-28.3,73.5c-2.7,6.8-6.2,8.8-10.2,8.8c-5.2,0-10.1-4.1-9.6-5l10.3-23.5c-2.9-0.4-4.7-1.5-5.9-4.1
+                                          L1131,85.3z"/>
+                                    </g>
+                                </g>
+                              </svg>
+                        </a>
+                    </div>
+                    <h2>Forgot your username?</h2>
+                    <p>Please enter your email address. You will receive email with your registered username.</p>
+                    <form action="/cp/login/forgotUsername" method="post">
+                                                <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input class="form-control" type="text" name="email" required placeholder="Email"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="submit" value="1"/>
+                            <button type="submit" class="btn btn-la btn-la pull-right">Request Username</button>
+                        </div>
+                    </form>
+                    <div class="links">
+                        <small>
+                            <a href="/cp/login">Login</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!-- .login-section // Forgot Username -->
+
+
+        </div>
+        <!-- .col-md-6 -->
+        <div class="col-md-6 col-md-pull-6 la-callout">
+                                                    <div class="callout azure change-up active">
+                            <h3>Now Featuring <strong>Hands-On Azure Labs</strong>. We Deploy the Environment, You Do the Learning.</h3>
+                            <div class="azure-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="168" height="190.5" viewBox="0 0 168 190.5">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #ec5951;
+                                                fill-rule: evenodd;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path id="hex_-_azure" data-name="hex - azure" class="cls-1"
+                                          d="M1758,2290a11,11,0,0,1-5.53-1.48l-72.94-42.1a11.1,11.1,0,0,1-5.53-9.58v-84.19a11.1,11.1,0,0,1,5.53-9.58l72.94-42.1a11.088,11.088,0,0,1,11.06,0l72.94,42.1a11.1,11.1,0,0,1,5.53,9.58v84.19a11.083,11.083,0,0,1-5.53,9.58l-72.94,42.1A11,11,0,0,1,1758,2290Zm0-188.51a8.995,8.995,0,0,0-4.53,1.21l-72.94,42.1a9.071,9.071,0,0,0-4.53,7.85v84.19a9.071,9.071,0,0,0,4.53,7.85l72.94,42.1a9.077,9.077,0,0,0,9.06,0l72.94-42.1a9.092,9.092,0,0,0,4.53-7.85v-84.19a9.092,9.092,0,0,0-4.53-7.85l-72.94-42.1A8.995,8.995,0,0,0,1758,2101.49Zm7.62,96.54a6.076,6.076,0,0,0-5.14,3.25h-31.94a9.74,9.74,0,1,1,0-19.48h4.6a15.118,15.118,0,0,1,1.08-3.25,11.694,11.694,0,0,1,.27-1.35,12.662,12.662,0,0,1,11.37-6.5,13.23,13.23,0,0,1,10.56,5.41,20.148,20.148,0,0,1,4.33-1.35,17.42,17.42,0,0,0-31.13,2.71h-1.08a14.038,14.038,0,0,0-14.35,14.07,14.439,14.439,0,0,0,14.35,14.34h32.21a5.526,5.526,0,0,0,10.56-2.16A5.558,5.558,0,0,0,1765.62,2198.03Zm17.87-10.82a20.044,20.044,0,0,0-17.87-11.1,19.5,19.5,0,0,0-19.22,15.43,15.76,15.76,0,0,0-11.1,6.49h23.55a9.054,9.054,0,0,1,6.77-3.24,8.66,8.66,0,0,1,0,17.32,9.063,9.063,0,0,1-6.77-3.25h-25.98a15.414,15.414,0,0,0,15.16,13.26h35.19A17.456,17.456,0,0,0,1783.49,2187.21Z"
+                                          transform="translate(-1674 -2099.5)"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                                            </div>
+    </div>
+</div>
+
+</body>
+
+</html>
