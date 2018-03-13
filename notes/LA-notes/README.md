@@ -1,1 +1,0 @@
-# Terraform LA Notes
