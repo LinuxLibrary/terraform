@@ -1,6 +1,6 @@
 # Interpolation Syntax - Terraform Manifest
 
-- Available Variables
+- ***Available Variables***
 	- User string variables
 		- Use the var. prefix followed by the variable name. For example, ${var.foo} will interpolate the foo variable value.
 	- User map variables
