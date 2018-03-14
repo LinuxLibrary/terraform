@@ -12,8 +12,4 @@
 		- The order of variables, resources, etc. defined within the configuration doesn't matter. Terraform configurations are declarative, so references to other resources and variables do not depend on the order they're defined.
 
 
-- We can maintain the manifest in a single file. But for simplicity of use we can split the single manifest file into multiple. Those can be re-used as per our requirement.
-
-- Variables
-- Providers
-- Resources
+> NOTE:  We can maintain the manifest in a single file. But for simplicity of use we can split the single manifest file into multiple. Those can be re-used as per our requirement.
