@@ -12,3 +12,25 @@
 - Override files are loaded last in alphabetical order.
 
 - Override files can be in Terraform syntax or JSON, just like non-override Terraform configurations.
+
+- ***Example***
+
+---
+
+- If you have a Terraform configuration example.tf with the contents:
+
+```
+resource "aws_instance" "web" {
+  ami = "ami-408c7f28"
+}
+```
+
+- And you created a file override.tf with the contents:
+
+```
+resource "aws_instance" "web" {
+  ami = "foo"
+}
+```
+
+- Then the AMI for the one resource will be replaced with "foo". Note that the override syntax can be Terraform syntax or JSON. You can mix and match syntaxes without issue.
