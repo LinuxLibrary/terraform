@@ -13,10 +13,9 @@
 
 - Override files can be in Terraform syntax or JSON, just like non-override Terraform configurations.
 
-- ***Example***
-
 ---
 
+***Example***
 - If you have a Terraform configuration example.tf with the contents:
 
 ```
