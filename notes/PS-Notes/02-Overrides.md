@@ -1,0 +1,14 @@
+# Overrides
+
+- Terraform loads all configuration files within a directory and appends them together. Terraform also has a concept of overrides, a way to create files that are loaded last and merged into your configuration, rather than appended.
+
+- Overrides have a few use cases:
+
+	- Machines (tools) can create overrides to modify Terraform behavior without having to edit the Terraform configuration tailored to human readability.
+	- Temporary modifications can be made to Terraform configurations without having to modify the configuration itself.
+
+- Overrides names must be override or end in _override, excluding the extension. Examples of valid override files are override.tf, override.tf.json, temp_override.tf.
+
+- Override files are loaded last in alphabetical order.
+
+- Override files can be in Terraform syntax or JSON, just like non-override Terraform configurations.
