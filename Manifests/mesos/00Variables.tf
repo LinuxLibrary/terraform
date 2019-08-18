@@ -1,15 +1,11 @@
 variable "aws_region" {}
 variable "aws_profile" {}
 variable "localip" {}
-variable "db_instance_class" {}
-variable "dbname" {}
-variable "dbuser" {}
-variable "dbpassword" {}
 variable "key_name" {}
 variable "public_key_path" {}
 variable "domain_name" {}
-variable "dev_instance_type" {}
-variable "dev_ami" {}
+variable "instance_type" {}
+variable "ami" {}
 variable "elb_healthy_threshold" {}
 variable "elb_unhealthy_threshold" {}
 variable "elb_timeout" {}
@@ -19,4 +15,5 @@ variable "asg_min" {}
 variable "asg_grace" {}
 variable "asg_hct" {}
 variable "asg_cap" {}
-variable "lc_instance_type" {}
+variable "master_count" {}
+variable "slave_count" {}
