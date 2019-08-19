@@ -1,9 +1,10 @@
 variable "aws_region" {}
 variable "aws_profile" {}
 variable "localip" {}
-variable "key_name" {}
-variable "public_key_path" {}
-variable "domain_name" {}
+variable "mesos_key_name" {}
+variable "mesos_key_path" {}
+variable "ansible_key_name" {}
+variable "ansible_key_path" {}
 variable "instance_type" {}
 variable "ami" {}
 variable "elb_healthy_threshold" {}
