@@ -1,7 +1,7 @@
 aws_region 				= "us-east-1"
 aws_profile 			= "hawkeye"
 #localip 				= "${locals.ip}"
-localip 				= ""
+localip 				= "60.243.161.29"
 mesos_key_name        	= "mesos"
 mesos_key_path 			= "/root/.ssh/mesos.pub"
 ansible_key_name        = "ansible"
