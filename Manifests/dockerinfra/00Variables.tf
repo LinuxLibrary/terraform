@@ -1,6 +1,8 @@
 variable "aws_region" {}
 variable "aws_profile" {}
 variable "localip" {}
+variable "mykey" {}
+variable "mykey_path" {}
 variable "docker_key_name" {}
 variable "docker_key_path" {}
 variable "ansible_key_name" {}
