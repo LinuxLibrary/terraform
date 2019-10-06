@@ -1,49 +1,31 @@
 # Create Docker Master Instances
 resource "aws_instance" "docker" {
-        count = "${var.docker_count}"
+    count = "${var.docker_count}"
 
-        tags = {
-                Name = "docker_${count.index}"
-        }
-
-        ami = "${var.ami}"
-        instance_type = "${var.instance_type}"
-        key_name = "${aws_key_pair.docker.key_name}"
-        vpc_security_group_ids = ["${aws_security_group.public.id}"]
-        subnet_id = "${aws_subnet.public.id}"
-
-    	provisioner "local-exec" {
-    		command = "sleep 6m"
-    	}
-
- #       provisioner "local-exec" {
- #       	command = "sleep 6m && sudo apt-get update -y && sudo wget -qO- https://get.docker.com/ | sudo sh"
- #       }
-
-}
-
-resource "null_resource" "ssh_config" {
-	provisioner "file" {
-		source = "${file(var.mykey_path)}"
-		destination = "/home/ubuntu/.ssh/authorized_keys_new"
-#		depends_on = ["aws_instance.docker.local-exec"]
-	}
-
-    provisioner "local-exec" {
-    	command = "cat /home/ubuntu/.ssh/authorized_keys_new >> /home/ubuntu/.ssh/authorized_keys"
-#    	depends_on = ["aws_instance.docker.local-exec"]
+    tags = {
+        Name = "docker_${count.index}"
     }
 
-    provisioner "local-exec" {
-   		command = "echo -e \"RSAAuthentication yes\nAuthorizedKeysFile    /etc/ssh/%u/authorized_keys\" >> /etc/ssh/sshd_config && service sshd reload"
-#   		depends_on = ["aws_instance.docker.local-exec"]
-    }
+    ami = "${var.ami}"
+    instance_type = "${var.instance_type}"
+    key_name = "${aws_key_pair.geekhost.key_name}"
+    vpc_security_group_ids = ["${aws_security_group.public.id}"]
+    subnet_id = "${aws_subnet.public.id}"
+#    user_data = "${file(var.geekhost_path)}"
 
-    depends_on = ["aws_instance.docker"]	
+#	provisioner "remote-exec" {
+#		connection {
+#			user = "ubuntu"
+#			host = "${element(aws_instance.docker.*.public_ip, 0)}"
+#			private_key = "${file("${var.keypath}/${var.docker_key_name}")}"
+#		}
+#
+#		inline = [
+#			"sudo curl http://169.254.169.254/latest/user-data >> /home/ubuntu/.ssh/authorized_keys"
+#		]
+#	}
 }
-
-
 
 output "instance_public_ips" {
-	value = ["aws_instance.docker.*.public_ip"]
+	value = ["${aws_instance.docker.*.public_ip}"]
 }
