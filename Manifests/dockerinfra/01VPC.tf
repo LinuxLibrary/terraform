@@ -6,10 +6,6 @@ resource "aws_vpc" "vpc" {
 	}
 }
 
-#output "vpc_cidr_block" {
-#	value = contact(aws_vpc.vpc.cidr_block, [""])[0]
-#}
-
 # Internet Gateway
 resource "aws_internet_gateway" "igw01" {
 	vpc_id = "${aws_vpc.vpc.id}"
@@ -125,7 +121,6 @@ resource "aws_security_group" "public" {
 		to_port		= 22
 		protocol	= "tcp"
 		cidr_blocks	= ["${data.external.localip.result["myip"]}","${aws_vpc.vpc.cidr_block}"]
-#		cidr_blocks	= ["0.0.0.0/0"]
 	}
 	
 	# HTTP-INGRESS
@@ -143,11 +138,10 @@ resource "aws_security_group" "public" {
 		from_port	= 2377
 		to_port		= 2377
 		protocol	= "tcp"
-#		cidr_blocks	= ["0.0.0.0/0"]
 		cidr_blocks	= ["${aws_vpc.vpc.cidr_block}"]
 	}
 
-	# HTTP-EGRESS
+	# EGRESS
 	egress {
 		from_port	= 0
 		to_port		= 0
