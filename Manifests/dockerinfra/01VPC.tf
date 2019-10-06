@@ -107,6 +107,11 @@ resource "aws_security_group" "jumphost" {
 	}
 }
 
+# Data resource to whitelist local ip
+data "external" "localip" {
+	program = ["sh", "${path.module}/myip.sh"]
+}
+
 # Security Group - PUBLIC
 resource "aws_security_group" "public" {
 	name = "docker-sg_public"
@@ -119,8 +124,8 @@ resource "aws_security_group" "public" {
 		from_port	= 22
 		to_port		= 22
 		protocol	= "tcp"
-#		cidr_blocks	= ["${var.localip}"]
-		cidr_blocks	= ["0.0.0.0/0"]
+		cidr_blocks	= ["${data.external.localip.result["myip"]}","${aws_vpc.vpc.cidr_block}"]
+#		cidr_blocks	= ["0.0.0.0/0"]
 	}
 	
 	# HTTP-INGRESS
