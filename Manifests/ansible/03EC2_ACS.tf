@@ -20,7 +20,7 @@ resource "aws_instance" "acs" {
 
 	provisioner "remote-exec" {
 		inline = [
-			"sudo useradd ansible && sudo echo ansible | passwd ansible",
+			"sudo useradd ansible",
 			"sudo mkdir -p /home/ansible/ && sudo chmod -R 777 /home/ansible/",
 		]
 	}
