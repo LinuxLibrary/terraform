@@ -1,0 +1,35 @@
+---
+- hosts: nodes
+  become: true
+  become_user: root
+  connection: ssh
+  gather_facts: no
+  tasks:
+  - name: Create ansible user
+    user:
+      name: ansible
+      state: present
+
+  - name: create home directory for ansible
+    file:
+      path: "/home/ansible/.ssh"
+      mode: 0777
+      state: directory
+      recurse: yes
+
+  - name: Copy ssh key files
+    copy:
+      src: "{{ item }}"
+      dest: "/home/ansible/.ssh/"
+    with_items:
+      - "C:\\Users\\Arjun Shrinvas\\.ssh\\ansiblekeys\\.ssh\\id_rsa"
+      - "C:\\Users\\Arjun Shrinvas\\.ssh\\ansiblekeys\\.ssh\\id_rsa.pub"
+      - "C:\\Users\\Arjun Shrinvas\\.ssh\\ansiblekeys\\.ssh\\authorized_keys"
+
+  - name: Change ownership and permissions of directories
+    shell: "{{ item }}"
+    with_items:
+    - "sudo chown -R ansible:ansible /home/ansible"
+    - "sudo chmod -R 0755 /home/ansible/"
+    - "sudo chmod 0600 /home/{ubuntu,ansible}/.ssh/*"
+...
