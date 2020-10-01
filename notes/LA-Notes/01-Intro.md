@@ -1,6 +1,7 @@
 # Terraform Introduction
 
-- Terraform is an Infrastructure management tool
+- Terraform is an Infrastructure management tool.
+- Use Infrastructure as Code to provision and manage any cloud, infrastructure, or service.
 - By using Terraform we can maintain the Infrastructure as Code (IAC)
 - Below are some of the features of Terraform
 - Idempotency: Because of it we can run it as many times as we need even it won't break the running things
